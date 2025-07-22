@@ -1,15 +1,17 @@
 
 
-# Debian 12 Installation - Part 1
+## Debian 12 Installation
+
+### Part 1
 
 ![image](images/debian-01.png)
-
+<br/>
 ![image](images/debian-02.png)
 
-# Debian 12 Installation - Part 2
+### Part 2
 
 
-# Debian 12 Installation - Part 3
+### Part 3
 
 
 
