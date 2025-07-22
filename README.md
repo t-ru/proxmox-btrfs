@@ -1,14 +1,14 @@
 
 
-## Debian 12 Installation
+## 1. Debian 12 Installation
 
-### Part 1
+### 1.1 Installer
 
 ![image](images/debian-01.png)
 
 ![image](images/debian-02.png)
 
-#### Choose language
+#### 1.1.1 Choose language
 
 ![image](images/debian-03.png)
 
@@ -24,15 +24,15 @@
 
 ![image](images/debian-09.png)
 
-#### Access software for a blind person using braille display
+#### 1.1.2 Access software for a blind person using braille display
 
 Skip this step
 
-#### Configure the speed synthesizer voice
+#### 1.1.3 Configure the speed synthesizer voice
 
 Skip this step
 
-#### Configure the keyboard
+#### 1.1.3 Configure the keyboard
 
 ### Part 2
 
