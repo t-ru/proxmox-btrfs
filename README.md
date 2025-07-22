@@ -8,6 +8,12 @@
 
 ![image](images/debian-02.png)
 
+#### Choose language
+
+![image](images/debian-03.png)
+
+
+
 ### Part 2
 
 
