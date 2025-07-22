@@ -2,7 +2,7 @@
 
 ## 1. Debian 12 Installation
 
-### 1.1 Installer
+### 1.1 Installer (part 1)
 
 ![image](images/debian-01.png)
 
@@ -34,10 +34,10 @@ Skip this step
 
 #### 1.1.3 Configure the keyboard
 
-### Part 2
+### 1.2 XXX
 
 
-### Part 3
+### 1.3 Installer (part 2)
 
 
 
