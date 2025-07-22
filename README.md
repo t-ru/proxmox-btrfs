@@ -34,6 +34,8 @@ Skip this step
 
 #### 1.1.3 Configure the keyboard
 
+![image](images/debian-10.png)
+
 ### 1.2 XXX
 
 
