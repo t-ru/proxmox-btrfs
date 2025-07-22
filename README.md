@@ -5,7 +5,7 @@
 ### Part 1
 
 ![image](images/debian-01.png)
-<br/>
+
 ![image](images/debian-02.png)
 
 ### Part 2
