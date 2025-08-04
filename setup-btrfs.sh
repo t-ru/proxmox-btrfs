@@ -13,7 +13,7 @@ echo $PARTITION_EFI_UUID
 echo $PARTITION_EFI_DEVICE
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
@@ -24,7 +24,7 @@ umount /target/boot/efi
 umount /target
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
@@ -34,7 +34,7 @@ echo ""
 mount $PARTITION_BTRFS_DEVICE /mnt
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
@@ -44,7 +44,7 @@ echo ""
 mv /mnt/@rootfs /mnt/@
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
@@ -58,7 +58,7 @@ mkdir /mnt/@/var
 btrfs subvolume create /mnt/@/var/log
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 echo ""
 echo "---- Migrate data from subvolume \"@\" to \"@/.snapshots/1/snapshot\" ----"
@@ -68,7 +68,7 @@ cp -aR /mnt/@/etc /mnt/@/.snapshots/1/snapshot
 cp -aR /mnt/@/boot /mnt/@/.snapshots/1/snapshot
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 echo ""
@@ -79,7 +79,7 @@ rm -rf /mnt/@/etc
 rm -rf /mnt/@/boot
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 echo ""
@@ -89,7 +89,7 @@ mkdir -p /mnt/@/.snapshots/1/snapshot/.snapshots
 mkdir -p /mnt/@/.snapshots/1/snapshot/var/log
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 echo ""
@@ -117,7 +117,7 @@ UUID=$PARTITION_BTRFS_UUID  /var/log                  btrfs  subvol=/@/var/log  
 EOF
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
@@ -127,7 +127,7 @@ echo ""
 btrfs subvolume set-default $(btrfs subvolume list /mnt | grep @/.snapshots/1/snapshot | cut -d " " -f 2) /mnt
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
@@ -137,7 +137,7 @@ echo ""
 umount /mnt
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 echo ""
@@ -149,7 +149,7 @@ mount $PARTITION_BTRFS_DEVICE -o subvol=/@/var/log /target/var/log
 mount $PARTITION_EFI_DEVICE -o umask=0077 /target/boot/efi
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 echo ""
@@ -160,7 +160,7 @@ umount /target/.snapshots
 mount $PARTITION_BTRFS_DEVICE -o subvol=/@/.snapshots /target/.snapshots
 echo ""
 echo "done."
-sleep 3000
+sleep 3
 
 
 
