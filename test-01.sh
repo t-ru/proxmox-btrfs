@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Set Variables
 PARTITION_BTRFS_UUID=$(cat /target/etc/fstab | grep " /  " | grep "^UUID=" | cut -d "=" -f 2 | cut -d " " -f 1)
